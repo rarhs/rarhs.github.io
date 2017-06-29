@@ -5,19 +5,14 @@
     <meta charset="utf-8">
     <style>
       /* GLOBAL STYLES */
-      body {
-        height: 800px;
-      }
       a {
-        color: rgba(255, 128, 255, 0.2);
+        color: #f00;
       }
-      
-      /* html{background: red;} */
       
       /* SOCIAL STYLES */
       .social-link {
         background: rgba(150, 150, 150, 0.5);
-        color: #00f;
+        color: blue;
       }
       
       /* BIO STYLES*/
@@ -28,23 +23,44 @@
       .bio-box {
         border: 1px solid #000;
         width: 50%;
-        margin: 10%;
-        font-size: 48px;
-        padding: 20px;
+        font-size: 1rem;
       }
-      .bio-copy a {
-        color: #008000;
+      .bio-box h3 {
+        font-size: 1.5em;
+      }
+      .bio-copy {
+        border: 1px solid red;
         font-size: 1em;
       }
-      div.bio-box {
-        border: 1px solid #008000;
+      .bio-copy a {
+        color: green;
       }
     </style>
   </head>
   <body>
     <div style="border:1px solid #000;width: 50%;height: 100%">I'm a percent test</div>
     
-    <h1 class="social-link">I'm an h1</h1>
+    <h1 class="social-link">I'm an h1
+      <div class="bio-box">
+        <h3>Michael Hartl</h3>
+        <a href="http://twitter.com/mhartl" class="social-link">here</a>
+        <div class="bio-copy">
+          <p>
+            Known for his dazzling charm, rapier wit, and unrivaled humility,
+            Michael is the creator of the
+            <a href="http://railstutorial.org/">Ruby on Rails
+            Tutorial</a> and principal author of the
+            <a href="https://learnenough.com/">
+            Learn Enough to Be Dangerous</a> introductory sequence. Michael
+            is also notorious as the founder of
+            <a href="http://tauday.com/">Tau Day</a> and author of
+            <a href="http://tauday.com/tau-manifesto"><em>The Tau
+            Manifesto</em></a>, but rumors that he's secretly a supervillain
+            are slightly exaggerated.
+          </p>
+        </div>
+      </div>
+    </h1>
     <ul>
       <li>
         <a href="http://example.com/" class="social-link">Link</a>
