@@ -1,5 +1,9 @@
 
 /* GLOBAL STYLES */
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
 body {
   font-family: helvetica, arial, sans;
 }
@@ -22,6 +26,9 @@ h2 ~ p {
 .header {
   background-color: #000;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 }
 .header-nav {
   float: right;
@@ -42,6 +49,7 @@ h2 ~ p {
   box-sizing: border-box;
   display: block;
   height: 10vh;
+  left: -30px;
   padding-top: 10px;
   position: relative;
   text-align: center;
@@ -56,14 +64,16 @@ h2 ~ p {
 }
 .header-nav a {
   color: #fff;
+}
+.nav-links a {
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.header-nav a:hover,
-.header-nav a:active {
+.nav-links a:hover,
+.nav-links a:active {
   color: #ed6e2f;
 }
 .header-logo:hover,
@@ -75,9 +85,6 @@ h2 ~ p {
   background-color: #c7dbfc;
   height: 50vh;
 }
-/*.full-hero:hover {
-  background-color: #5b31d8;
-}*/
 
 /* SOCIAL STYLES */
 .social-link {
@@ -97,11 +104,7 @@ h2 ~ p {
   vertical-align: middle;
   width: 2.5em;
 }
-/*
-.social-link:hover,
-.social-link:active {
-  background-color: #e01432;
-}*/
+
 .social-list {
   list-style: none;
   padding: 0;
@@ -125,7 +128,7 @@ h2 ~ p {
   float: left;
   font-size: 1rem;
   margin: 40px 1% 0;
-  padding: 0 2% 2%;
+  padding: 2%;
   width: 23%;
 }
 .bio-box h3 {
@@ -143,8 +146,31 @@ h2 ~ p {
 }
 .bio-copy {
   font-size: 1em;
-  line-height: 1.5;
 }
 .bio-copy a {
   color: green;
+}
+/*FOOTER STYLES*/
+footer {
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+}
+.footer-logo img {
+  width: 50px;
+}
+footer h3 {
+  color: #fff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+footer h3 span {
+  color: #aaa;
+}
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #ccc;
 }
