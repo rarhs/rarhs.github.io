@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This is the title of the first post
+title: Relation between Golden Bengal and Mother Earth.
 postHero: /images/shark.jpg
 author: Me, Myself, and I
 authorTwitter: http://twitter.com/mhartl
